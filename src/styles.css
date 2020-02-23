@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300:400,600,700&display=swap');
+@import "reset.css";
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans";
+    height: 1000000px;
+    font-weight: 600;
+}
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.animations, .cover {
+    width : 195px;
+    height : 145px;    
+    display : flex;
+    justify-content : center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.animations{   
+    width : 355px;
+    height : 245px;
+    border: 50px solid #f7f7f7;
+    border-left : 80px solid #f7f7f7;
+    border-right : 80px solid #f7f7f7;
+    cursor: pointer;
+}
+
+.animations__table{
+    position: relative;
+}
+.cover {
+    position : absolute;
+    top : 50px;
+    left : 80px;
+}
+.animation__img {
+    width : 72px;
+    height : 72px;
+    align-self: center;
+}
+
+.animation1 {
+    background-color : #009E91;
+}
+.animation2 {
+    background-color : #F7A5A1;
+}
+.animation3 {
+    background-color : #273748; 
+}
+
+.animation__img.three {
+    width : 195px;
+    height : 145px;  
+    background-color : #D6F0F9;
+    border: 25px solid #D6F0F9;
+    border-left : 50px solid #D6F0F9;
+    border-right : 50px solid #D6F0F9;
+    margin-top : 45px;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.animation__img.three:hover{
+    margin-top : 0px;
+    width : 100px;
+    height : 75px;  
+    background-color : #D6F0F9;
+    border: 15px solid #D6F0F9;
+    border-left : 28px solid #D6F0F9;
+    border-right : 28px solid #D6F0F9;    
+}
+
+
+.cover {
+    background-color : #273748;
+    opacity: 0;
+}
+.cover:hover{
+    animation: animationOne 0.5s ease-in-out forwards;
+}
+
+@keyframes animationOne {
+    from{
+        top: 50px;
+        left : 80px;
+    }
+    to{
+        top: 60px;
+        left : 90px;
+        opacity: 1;
+    }
+}
+
+.after-txt1 {
+    font-size : 10px;
+    color: white;
+}
+.after-txt2 {
+    font-size : 8px;
+    color: #EA4463;
+}
+.after-txt3 {
+    font-size : 8px;
+    background-color: #EA4463;
+    color : white;
+    padding : 5px;
+}
+
+.after-txt2.one{
+    margin-top : 5px;
+    margin-bottom : 20px;
+}
+
+.below {    
+    width : 195px;
+    height : 55px;    
+    background-color : #273748;    
+    display : flex;
+    justify-content : center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 10px;
+    /*display: none; */
+}
+/*
+.below.gamecenter{
+    display: none;
+}
+*/
+
+.animation__img.two {
+    margin : 10px 0px;
+}
+.after-txt3.txttwo {
+    align-self: flex-end;
+    margin-top : -9px;
+}
+
+.animation2:hover{
+    animation: animationTwo 0.5s ease-in-out forwards;
+}
+
+@keyframes animationTwo {
+    from{
+        opacity: 0;
+    }
+    to{
+        display: static;
+    }
+}
+.animations.animation3{
+    position: relative;
+}
+.upper.safari {
+    position: absolute;
+    width: 195px;
+    height : 100px;
+    top : 0;    
+    display : flex;
+    justify-content : center;
+}
+.bottom.safari{
+    position: absolute;
+    width : 195px;
+    height : 60px;  
+    top : 95px;     
+    display : flex;
+    justify-content : center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.after-txt3.three {
+    align-self: flex-end;
+    margin-top : -15px;
+}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #020202;    
+    font-family: "Open Sans";
+    height : 1000px;
+}
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.content {
+    width : 315px;
+    height : 600px;
+    padding : 15px 20px;
+    border: 10px solid #2597F8;
+    background : linear-gradient(rgba(241, 242, 246, 0.1), rgb(241, 242, 246) 100%), url('../images/photo.jpg');
+    background-size: 315px 600px; 
+    color : #808080;
+}
+
+.header,
+.status-bar,
+.navigation,
+.follow_message,
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+.info__column{
+    display: flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items: center;
+}
+
+.header {
+    color : black;
+    font-weight : 700;
+}
+.name_address{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items: center;
+}
+
+.header {
+    font-size : 12px;
+}
+.header-txt{
+    padding-left : 8px;
+}
+.status-bar {
+    font-size : 17px;
+    font-weight : 400;
+    margin : 25px 0px;
+}
+.status-bar__title{
+    font-size : 14px;
+}
+
+.photo{
+    width: 68px;
+    height: 68px;
+    margin-top : 80px;
+    margin-bottom : 15px;
+    border-radius : 50%;
+    box-shadow : rgba(50,50,93,0.25) 0px 13px 27px -5px,
+    rgba(0,0,0,0.3) 0px 8px 16px -8px,
+    rgba(0,0,0,0.024) 0px -6px 16px -6px;
+}
+
+.name-txt {
+    font-size : 20px;
+    color : #2597F8;
+    font-weight : 700;
+}
+.address-txt {
+    font-size : 15px;
+    margin-top : 10px;
+    color : gray;
+}
+.follow_message{
+    font-size : 14px;
+    padding : 25px 0px;
+}
+
+.message, .follow {
+    border-radius : 10px;
+    box-shadow : rgba(50,50,93,0.25) 0px 13px 27px -5px,
+    rgba(0,0,0,0.3) 0px 8px 16px -8px,
+    rgba(0,0,0,0.024) 0px -6px 16px -6px;
+    text-shadow: 0px 1px 1px lightgray;
+}
+
+.message {
+    padding : 15px 34px;
+    color : white;
+}
+.follow {
+    padding : 15px 40px;
+}
+.number-txt {
+    font-size : 12px;
+}
+
+.info{
+    padding: 0px 18px;
+}
+.info-txt {
+    font-size : 14px;
+    padding-top : 3px;
+}
+
+.navigation{
+    font-size : 16px;
+    margin-top : 110px;
+    padding : 0px 25px;
+}
+
+.nav_user{
+    color : #2597F8;
+}
+
+.follow{
+    background-color : white;
+}
+.message{
+    background-color :  #2597F8;
+}

@@ -32,8 +32,8 @@
     align-items: center;
     border-radius: 50%;
     animation : action-blink 0.5s ease-out forwards;
-    -webkit-animation: wobble-hor-top 1s ease-out 0.5s 5 ;
-	        animation: wobble-hor-top 1s ease-out 0.5s 5 ;
+    -webkit-animation: wobble-hor-top 1s ease-out 0.5s infinite ;
+	        animation: wobble-hor-top 1s ease-out 0.5s infinite ;
 }
 @-webkit-keyframes wobble-hor-top {
     0%,
